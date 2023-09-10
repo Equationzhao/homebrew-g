@@ -1,8 +1,8 @@
 class GLs < Formula
   desc "a powerfull cross-platform ls"
   homepage "g.equationzhao.space"
-  url "https://github.com/Equationzhao/g/archive/refs/tags/v0.13.2.tar.gz" , :tag => "v0.13.2"
-  sha256 "be8afefb7952c2e74127a55fdc0c056fadbd58e652957af1b9f913d0e0a82123"  
+  url "https://github.com/Equationzhao/g/archive/refs/tags/v0.14.0.tar.gz" , :tag => "v0.14.0"
+  sha256 "3bbe10a755005e6e2e9ad64a54035dff8014b639a39623d0a7503fa690aa4b23"
   license "MIT"
 
   depends_on "go" => :build
