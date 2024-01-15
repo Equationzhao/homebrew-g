@@ -1,8 +1,8 @@
 class GLs < Formula
   desc "Powerfull cross-platform ls"
   homepage "https://g.equationzhao.space"
-  url "https://github.com/Equationzhao/g/archive/refs/tags/v0.24.4.tar.gz", tag: "v0.24.4"
-  sha256 "e8647d975d5a22c66efb72fe568a17b08217cc19149d37cc268f316615198c88"
+  url "https://github.com/Equationzhao/g/archive/refs/tags/v0.25.1.tar.gz", tag: "v0.25.1"
+  sha256 "67e066e4437eb432c76b0ca31f366cdd1d56380db93d1df1d9b75670892c5691"
   license "MIT"
 
   depends_on "go" => :build
@@ -14,6 +14,6 @@ class GLs < Formula
 
   test do
     output = shell_output("#{bin}/g -v | grep -E 'Version\\s*[0-9.]*' | grep -v 'Go Version' | awk '{print $3}'")
-    assert_match "0.24.4", output
+    assert_match "0.25.1", output
   end
 end
