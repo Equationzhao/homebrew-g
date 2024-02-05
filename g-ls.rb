@@ -12,6 +12,7 @@ class GLs < Formula
     bin.install "g"
 
     man1.install buildpath.glob("man/*.1.gz")
+    zsh_completion.install "completions/zsh/_g"
   end
 
   test do
