@@ -8,7 +8,7 @@ class GLs < Formula
   depends_on "go" => :build
 
   def install
-    system "go build -ldflags='-s -w'"
+    system "go build -ldflags='-s -w'" -tags="fuzzy mounts"
     bin.install "g"
 
     man1.install buildpath.glob("man/*.1.gz")
